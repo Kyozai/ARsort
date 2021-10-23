@@ -1,19 +1,19 @@
 <!doctype HTML>
 <html>
 <!-- ライブラリの読み込み -->
-<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 <body style='margin:0px; overflow:hidden;'>
 <!-- A-FrameにAR.jsを紐づける、ARマーカーのパターンレシオを設定 -->
 <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;patternRatio:0.90;" vr-mode-ui="enabled: false">
     <a-assets>
         <!-- 3Dオブジェクトを設定 -->
-        <a-asset-item id="cube-obj" src="cube.obj"></a-asset-item>
-        <a-asset-item id="cube-mtl" src="cube.mtl"></a-asset-item>
+        <a-asset-item id="neko-obj" src="neko.obj"></a-asset-item>
+        <a-asset-item id="neko-mtl" src="neko.mtl"></a-asset-item>
     </a-assets>
     <!-- 自作したARマーカーを指定 -->
-    <a-marker type="pattern" url="pattern-cube.patt">
-        <a-obj-model id="cube" src="#cube-obj" mtl="#cube-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
+    <a-marker type="pattern" url="pattern-neko.patt">
+        <a-obj-model id="neko" src="#neko-obj" mtl="#neko-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
     </a-marker>
     <a-entity camera></a-entity>
 </a-scene>
