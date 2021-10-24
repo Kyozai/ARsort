@@ -6,7 +6,7 @@ mtllib neko.mtl
 
 g Mesh1 Model
 
-usemtl Ty_Gray2
+usemtl Color_M00
 v 11.7747 88.4804 -28.2309
 vt 11.7747 88.4804
 vn -5.72379e-13 1.02029e-13 1
