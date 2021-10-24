@@ -8,12 +8,12 @@
 <a-scene embedded arjs="debugUIEnabled:false;">
     <a-assets>
         <!-- 3Dオブジェクトを設定 -->
-        <a-asset-item id="neko-obj" src="neko.obj"></a-asset-item>
-        <a-asset-item id="neko-mtl" src="neko.mtl"></a-asset-item>
+        <a-asset-item id="cube-obj" src="cube.obj"></a-asset-item>
+        <a-asset-item id="cube-mtl" src="cube.mtl"></a-asset-item>
     </a-assets>
     <!-- 自作したARマーカーを指定 -->
     <a-marker type="pattern" url="pattern-cat.patt">
-        <a-obj-model id="neko" src="#neko-obj" mtl="#neko-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
+        <a-obj-model id="neko" src="#cube-obj" mtl="#cube-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model>
     </a-marker>
     <a-entity camera></a-entity>
 </a-scene>
