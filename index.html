@@ -12,7 +12,8 @@
        <a-asset-item id="block1-obj" src="block1.obj"></a-asset-item> 
        <a-asset-item id="block1-mtl" src="block1.mtl"></a-asset-item> 
         
-    
+       <a-asset-item id="block2-obj" src="block2.obj"></a-asset-item> 
+       <a-asset-item id="block2-mtl" src="block2.mtl"></a-asset-item> 
  
     </a-assets> 
     
@@ -21,7 +22,9 @@
     <a-obj-model id="block1" src="#block1-obj" mtl="#block1-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model> 
     </a-marker> 
     
-  
+    <a-marker type="pattern" url="pattern-B.patt"> 
+    <a-obj-model id="block2" src="#block2-obj" mtl="#block2-mtl" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0"></a-obj-model> 
+    </a-marker> 
      
     
     <a-entity camera></a-entity>
